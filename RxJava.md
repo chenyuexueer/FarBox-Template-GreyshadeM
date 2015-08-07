@@ -55,7 +55,7 @@ client.login(username, password) // login() 时只会准备请求，不会执行
 ```
 
 #### 转换：
-Retrofit 最长会用到有两个： `map()`, `flatMap()`
+Retrofit 最常会用到有两个： `map()`, `flatMap()`
 
 ##### `map()`
 ```java
