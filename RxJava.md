@@ -1,7 +1,10 @@
 # RxJava 简介
 
-### 是什么
-一种扩展的观察者模式。
+### 这篇文章简介的目的
+让 Flipboard 北京团队快速上手 RxJava， 美国人已经用熟了。
+
+### RxJava 粗定义
+一种扩展的观察者模式。代码长这样：
 
 ```java
 Observable.subscribe(observer);
