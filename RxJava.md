@@ -233,4 +233,4 @@ unsubscribe 的原因有两种情况：
 2. 防止内存泄露。方式：在合适的地方 (`Activity.onDestroy()`, `View.onDetachToWindow()`中）调用 `Subscription.subscribe()`， 或者使用** Flipboard 的 toolbox 中的便捷方法：`BindTransformer` ([示例](https://github.com/Flipboard/android/blob/cacf09a0b45b1682a9d79a7990f5ed3443af87b4/apps/flipboard/src/main/java/flipboard/gui/section/SectionFragment.java#L1282))**实现自动 unsubscribe.
 
 ### RxBus
-RxBus 不是一个库，而是一种 RxJava 的使用方式。具体可以在[这里](https://github.com/Flipboard/android/issues/2302#issuecomment-118561719)看到 Zac 的介绍。
+RxBus 不是一个库，而是一种 RxJava 的使用方式。具体可以在[这里](https://github.com/Flipboard/android/issues/2302)看到 Zac 的介绍。
