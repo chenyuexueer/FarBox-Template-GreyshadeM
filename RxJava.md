@@ -1,4 +1,4 @@
-# RxJava 简介
+# RxJava on Flipboard 简介
 
 ### 这篇简介的目的
 让 Flipboard 北京团队快速上手 RxJava， 美国人已经用熟了。
