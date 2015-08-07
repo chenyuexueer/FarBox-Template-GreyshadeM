@@ -162,7 +162,7 @@ client.login(username, password)
 取消订阅的原因有两种情况：
 
 1. 不再需要。方式： `Subsription.unsubscribe()` (可以先通过 `Subscription.isUnsubscribed()` 检查一下)。
-2. 防止内存泄露。在合适的地方 (`Activity.onDestroy()`, `View.onDetachToWindow()`等)调 `Subscription.subscribe()`. 或者使用**Flipboard 的 toolbox 中的便捷方法：`BindTransformer` ([示例](https://github.com/Flipboard/android/blob/cacf09a0b45b1682a9d79a7990f5ed3443af87b4/apps/flipboard/src/main/java/flipboard/gui/section/SectionFragment.java#L1282))**.
+2. 防止内存泄露。方式：在合适的地方 (`Activity.onDestroy()`, `View.onDetachToWindow()`等调 `Subscription.subscribe()`. 或者使用**Flipboard 的 toolbox 中的便捷方法：`BindTransformer` ([示例](https://github.com/Flipboard/android/blob/cacf09a0b45b1682a9d79a7990f5ed3443af87b4/apps/flipboard/src/main/java/flipboard/gui/section/SectionFragment.java#L1282))**.
 
 #### RxAndroid
 RxAndroid 是 RxJava 的 Android 扩展，增加了一些 Android 的便利方法。目前我看到我们在用的有：
